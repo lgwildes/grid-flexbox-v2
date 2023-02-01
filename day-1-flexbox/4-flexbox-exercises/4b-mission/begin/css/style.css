@@ -142,11 +142,13 @@ figcaption a {
 
 /* mission styles */
 #logo {
-    display:block;
+    max-width: 200px;
+
 }
 #logo-text {
     display:flex;
     flex-flow:column-reverse;
+    line-height: 1.5rem;
 }
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
@@ -171,13 +173,20 @@ figcaption a {
         flex-flow: row;
         gap: 2%;
         justify-content: space-around;
+        max-height: 170px;
+        margin-bottom: 3rem;
 
     }
     #logo {
         flex-basis: 30%;
+        max-width:270px;
     }
     #text {
         flex-basis: 68%;
+        
+    }
+    #collections {
+        margin-top:5rem;
     }
 }
 
