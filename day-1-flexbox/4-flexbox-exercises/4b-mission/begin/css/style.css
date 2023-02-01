@@ -141,45 +141,39 @@ figcaption a {
 }
 
 /* mission styles */
-#mission {
-    margin-bottom: 3rem;
-}
 #logo {
     display:block;
 }
 #logo-text {
     display:flex;
     flex-flow:column-reverse;
-    
-}
-#text {
-    line-height: 1.7;
 }
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 /* TABLET */
 
 @media (min-width: 550px) {
-    #collections ul {
+
+    section ul {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
     }
-    #collections li {
+    section li {
         flex-basis: 49.5%;
     }
     /* turn off object position, inherit object-fit: cover */
-    #collections figure img {
+   
+    figure img {
         object-position: 0;
     }
     #logo-text {
-        display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         gap: 2%;
-        justify-content: space-between;
+        justify-content: space-around;
 
     }
-   #logo-text figure #logo {
+    #logo {
         flex-basis: 30%;
     }
     #text {
@@ -189,10 +183,10 @@ figcaption a {
 
  /* DESKTOP */
 @media (min-width: 800px) {
-    #collections h2 {
+    section h2 {
         margin-left: 100px;
     }
-    #collections li {
+    section li {
         flex-basis: 32.5%;
     }
 }
