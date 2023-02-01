@@ -140,29 +140,59 @@ figcaption a {
     color: var(--color8);
 }
 
+/* mission styles */
+#mission {
+    margin-bottom: 3rem;
+}
+#logo {
+    display:block;
+}
+#logo-text {
+    display:flex;
+    flex-flow:column-reverse;
+    
+}
+#text {
+    line-height: 1.7;
+}
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
+/* TABLET */
 
 @media (min-width: 550px) {
-    section ul {
+    #collections ul {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
     }
-    section li {
+    #collections li {
         flex-basis: 49.5%;
     }
     /* turn off object position, inherit object-fit: cover */
-    figure img {
+    #collections figure img {
         object-position: 0;
+    }
+    #logo-text {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2%;
+        justify-content: space-between;
+
+    }
+   #logo-text figure #logo {
+        flex-basis: 30%;
+    }
+    #text {
+        flex-basis: 68%;
     }
 }
 
+ /* DESKTOP */
 @media (min-width: 800px) {
-    section h2 {
+    #collections h2 {
         margin-left: 100px;
     }
-    section li {
+    #collections li {
         flex-basis: 32.5%;
     }
 }
