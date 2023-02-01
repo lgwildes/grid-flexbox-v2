@@ -124,7 +124,7 @@ figcaption a {
         justify-content: space-between;
     }
     section li {
-        flex-basis: 50%;
+        flex-basis: 49%;
     }
     figure img{
         object-position: 0;
