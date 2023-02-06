@@ -154,10 +154,22 @@ figcaption a {
 }
 
 /* footer styles */
-ul {
+footer ul {
     list-style-type: none;
+    display: flex;
+    padding:0;
+    justify-content: flex-start;
 }
 
+footer li {
+    padding-right: 1rem;
+}
+
+.footer {
+    background-color:var(--color5);
+    width: 100%;
+    padding: 3rem;
+}
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
