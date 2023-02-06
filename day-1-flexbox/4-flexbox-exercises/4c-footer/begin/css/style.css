@@ -170,6 +170,10 @@ footer li {
     width: 100%;
     padding: 3rem;
 }
+address {
+    font-style: normal;
+    font-weight: bold;
+}
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
@@ -196,6 +200,18 @@ footer li {
         float: left;
         shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
         max-height: 211px;
+    }
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .social {
+        flex-basis: 48%;
+    }
+    address {
+        flex-basis: 48%;
     }
 }
 
