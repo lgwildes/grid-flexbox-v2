@@ -153,6 +153,11 @@ figcaption a {
     display: block;
 }
 
+/* footer styles */
+ul {
+    list-style-type: none;
+}
+
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
