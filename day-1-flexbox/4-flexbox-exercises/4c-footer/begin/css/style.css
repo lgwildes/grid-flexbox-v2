@@ -176,7 +176,7 @@ address {
 }
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
-
+/* TABLET */
 @media (min-width: 550px) {
     section ul {
         display: flex;
@@ -214,12 +214,18 @@ address {
         flex-basis: 48%;
     }
 }
-
+/* DESKTOP */
 @media (min-width: 800px) {
     section h2 {
         margin-left: 100px;
     }
     section li {
         flex-basis: 32.5%;
+    }
+    .social {
+        flex-basis: 32%;
+    }
+    address {
+        flex-basis: 64%;
     }
 }
